@@ -1,0 +1,53 @@
+.spinner{display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+height:300px;
+width:300px;
+font-size:3em;
+cursor:none;
+animation:text-color 1.4s ease-in-out infinite alternate;}
+
+
+.sector{background-color:;
+position:absolute;
+height:100%;
+width:100%;
+border:20px solid transparent;
+border-radius:50%;
+animation:rotate var(--duration) var(--timing) infinite;
+opacity:.7;
+cursor:none;
+
+}
+
+
+.sector-red{border-top-color:#ff0000;
+--duration:1.5s;
+--timing:ease-in;}
+
+
+.sector-blue{border-bottom-color:#B0E0E6;
+--duration:2s;
+--timing:ease-out;}
+
+.sector-green{border-left-color:#90ee90;
+--duration:2.5s;
+--timing:ease-in-out;}
+
+@keyframes rotate{0%{transform: rotate(0);}
+
+
+100%{transform:rotate(360deg);}
+}
+
+
+@keyframes text-color{0%{color:rgb(255,0,0,1);}
+
+50%{color:rgb(144,238,144,0.9);}
+
+100%{color:rgb(176,224,230,.8);}
+}
+
+
+
